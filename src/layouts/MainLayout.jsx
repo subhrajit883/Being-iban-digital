@@ -15,7 +15,7 @@ export default function MainLayout() {
         <Outlet />
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <WhatsAppButton />  */}
     </>

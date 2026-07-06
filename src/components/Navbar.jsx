@@ -56,7 +56,7 @@ export default function Navbar() {
             <button
               key={item}
               onClick={() => scrollTo(item)}
-              className={`capitalize transition
+              className={`capitalize transition cursor-pointer
 
                 ${
                   active === item
@@ -71,7 +71,7 @@ export default function Navbar() {
         </nav>
 
         <button
-          className="hidden md:block px-5 py-3 rounded-full bg-amber-500 hover:bg-amber-600 transition"
+          className="hidden md:block px-5 py-3 rounded-full bg-[#d9963f] hover:bg-[#d99636] transition"
         >
           Get Started
         </button>

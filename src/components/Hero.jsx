@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import hero from "../assets/hero-globe.webp";
 
 export default function Hero() {
+      const scrollTo = (id) => {
+    setOpen(false);
+
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <section
       id="home"
@@ -23,7 +30,7 @@ export default function Hero() {
             AI Powered Digital Marketing
           </span>
 
-          <h1 className="mt-8 text-6xl lg:text-7xl font-black leading-tight">
+          <h1 className="mt-8 text-4xl lg:text-7xl font-black leading-tight">
             Reach The Heart Of Your
             <span className="text-[#d9963f]">
               {" "}Target Audience
@@ -42,7 +49,7 @@ export default function Hero() {
               Get Started
             </button>
 
-            <button className="px-8 py-4 rounded-full border border-white/30 hover:bg-white hover:text-black transition">
+            <button id="services" onClick={() => scrollTo("services")} className="px-8 py-4 rounded-full border border-white/30 hover:bg-white hover:text-black transition">
               Our Services
             </button>
 
